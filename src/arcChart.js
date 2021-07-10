@@ -146,7 +146,7 @@ function ArcChart(props) {
             .attr('id', d => `${d.data.name}-mask`)
             .attr('stroke', backgroundColor)
             .attr('stroke-width', arcPadding)
-            .attr('cursor', 'pointer')
+            .attr('cursor', d => d.data.name === 'other' ? 'auto' : 'pointer')
             .on('mouseenter', (event, d) => {
                 if (d.data.name === 'other') {
                     handleHover(null);
