@@ -1,0 +1,236 @@
+{
+    "name": "flare",
+    "num": 41869,
+    "height": 3,
+    "children": [{
+            "name": "physics",
+            "num": 29934,
+            "children": [{
+                    "name": "DragForce",
+                    "value": 1082,
+                    "num": 1082,
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 582 }
+                    ]
+                },
+                {
+                    "name": "GravityForce",
+                    "value": 1336,
+                    "num": 1336,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 836 }
+                    ]
+                },
+                {
+                    "name": "IForce",
+                    "value": 319,
+                    "num": 319,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 200 },
+                        { "name": "orange", "num": 119 }
+                    ]
+                },
+                {
+                    "name": "NBodyForce",
+                    "value": 10498,
+                    "num": 10498,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 3000 },
+                        { "name": "orange", "num": 7498 }
+                    ]
+                },
+                {
+                    "name": "Particle",
+                    "value": 2822,
+                    "num": 2822,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 2322 }
+                    ]
+                },
+                {
+                    "name": "Simulation",
+                    "value": 9983,
+                    "num": 9983,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 9483 }
+                    ]
+                },
+                {
+                    "name": "Spring",
+                    "value": 2213,
+                    "num": 2213,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 1713 }
+                    ]
+                },
+                {
+                    "name": "SpringForce",
+                    "value": 1681,
+                    "num": 1681,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 1181 }
+                    ]
+                }
+            ],
+            "divs": [
+                { "name": "apple", "num": 19934 },
+                { "name": "orange", "num": 10000 }
+            ]
+        },
+        {
+            "name": "data",
+            "num": 11935,
+            "children": [{
+                    "name": "converters",
+                    "num": 18349,
+                    "children": [{
+                            "name": "Converters",
+                            "value": 721,
+                            "num": 721,
+                            "children": [],
+                            "divs": [
+                                { "name": "apple", "num": 500 },
+                                { "name": "orange", "num": 221 }
+                            ]
+                        },
+                        {
+                            "name": "DelimitedTextConverter",
+                            "value": 4294,
+                            "num": 4294,
+                            "children": [],
+                            "divs": [
+                                { "name": "apple", "num": 500 },
+                                { "name": "orange", "num": 1294 },
+                                { "name": "pear", "num": 2500 }
+                            ]
+                        },
+                        {
+                            "name": "GraphMLConverter",
+                            "value": 9800,
+                            "num": 9800,
+                            "children": [],
+                            "divs": [
+                                { "name": "apple", "num": 2000 },
+                                { "name": "orange", "num": 5300 },
+                                { "name": "pear", "num": 2500 }
+                            ]
+                        },
+                        {
+                            "name": "IDataConverter",
+                            "value": 1314,
+                            "num": 1314,
+                            "children": [],
+                            "divs": [
+                                { "name": "apple", "num": 500 },
+                                { "name": "orange", "num": 814 }
+                            ]
+                        },
+                        {
+                            "name": "JSONConverter",
+                            "value": 2220,
+                            "num": 2220,
+                            "children": [],
+                            "divs": [
+                                { "name": "apple", "num": 500 },
+                                { "name": "orange", "num": 1720 }
+                            ]
+                        },
+                        {
+                            "name": "other",
+                            "value": 700,
+                            "num": 700,
+                            "children": [],
+                            "divs": []
+                        }
+                    ],
+                    "divs": [
+                        { "name": "apple", "num": 8000 },
+                        { "name": "orange", "num": 8349 },
+                        { "name": "pear", "num": 2000 }
+                    ]
+                },
+                {
+                    "name": "DataField",
+                    "value": 1759,
+                    "num": 1759,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 1259 }
+                    ]
+                },
+                {
+                    "name": "DataSchema",
+                    "value": 2165,
+                    "num": 2165,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 1665 }
+                    ]
+                },
+                {
+                    "name": "DataSet",
+                    "value": 586,
+                    "num": 586,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 86 }
+                    ]
+                },
+                {
+                    "name": "DataSource",
+                    "value": 3331,
+                    "num": 3331,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 2000 },
+                        { "name": "orange", "num": 1331 }
+                    ]
+                },
+                {
+                    "name": "DataTable",
+                    "value": 772,
+                    "num": 772,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 272 }
+                    ]
+                },
+                {
+                    "name": "DataUtil",
+                    "value": 3322,
+                    "num": 3322,
+                    "children": [],
+                    "divs": [
+                        { "name": "apple", "num": 500 },
+                        { "name": "orange", "num": 2822 }
+                    ]
+                }
+            ],
+            "divs": [
+                { "name": "apple", "num": 10000 },
+                { "name": "orange", "num": 1935 }
+            ]
+        }
+    ],
+    "divs": [
+        { "name": "apple", "num": 20000 },
+        { "name": "orange", "num": 21869 }
+    ]
+}
