@@ -23,7 +23,7 @@ The following nested data structure is required as input:
 				{
 					"name": "A.1",
 					"value": 15,
-					"num" 15,
+					"num": 15,
 					"children": [],
 					"divs": [
 						{ "name": "cat-A", "num": 10 },
@@ -54,7 +54,7 @@ The following nested data structure is required as input:
 		},
 		{
 			"name": "B",
-			"num: 22,
+			"num": 22,
 			"children": [
 				{
 					"name": "B.1",
