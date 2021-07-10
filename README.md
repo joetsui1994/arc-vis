@@ -105,3 +105,8 @@ The following nested data structure is required as input:
 	]
 }					
 ```
+
+* the attribute `value` is only required for leaf arcs (arcs with no children)
+* each arc should have the attribute `num` indicating the number of objects in the sub-group
+* the value for the attributes `value` and `num` should always be the same
+* the sum of `value` of `divs` must be equal to the `num` and `value` of its corresponding arc
