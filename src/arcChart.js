@@ -20,35 +20,35 @@ function ArcChart(props) {
     } = params;
 
     // select masks to reduce opacity according to selected/hovered arc
-    const highlightPath = (name) => {
-        if (name === null) {
+    const highlightPath = (id) => {
+        if (id === null) {
             d3.selectAll('.masks')
                 .each(function(d) {
-                    d3.select(`#${d.data.name}-mask`).transition(d.data.name).duration(transitionDuation).attr('fill-opacity', 0);
+                    d3.select(`#mask_${d.data.id}`).transition(d.data.id).duration(transitionDuation).attr('fill-opacity', 0);
                 });
         } else {
-            const highlightedNode = d3.select(`#${name}`).datum();
+            const highlightedNode = d3.select(`#${id}`).datum();
             const sequence = highlightedNode
                 .ancestors()
                 .reverse()
                 .slice(1);
-            const sequenceNames = sequence.map(node => node.data.name);
+            const sequenceNames = sequence.map(node => node.data.id);
             
             // loop over masks in sequence array
             d3.selectAll('.masks')
-                .filter(node => !sequenceNames.includes(node.data.name))
+                .filter(node => !sequenceNames.includes(node.data.id))
                 .each(function(d) {
-                    d3.select(`#${d.data.name}-mask`).transition(d.data.name).duration(transitionDuation).attr('fill-opacity', 1 - unhoveredOpacity);
+                    d3.select(`#mask_${d.data.id}`).transition(d.data.id).duration(transitionDuation).attr('fill-opacity', 1 - unhoveredOpacity);
                 });
             sequenceNames.forEach(node => {
-                d3.select(`#${node}-mask`).transition(node).duration(transitionDuation).attr('fill-opacity', 0);
+                d3.select(`#mask_${node}`).transition(node).duration(transitionDuation).attr('fill-opacity', 0);
             });
         }
     };
 
     // calculate start/end angles of a div (IMPORTANT)
     const calcDivAngle = (d, start=true) => {
-        const divId = d.data.divs.findIndex(div => div.name === d.div.name);
+        const divId = d.data.divs.findIndex(div => div.id === d.div.id);
         const preDivsSum = d.data.divs.slice(0, divId).reduce((sum, div) => sum + div.num, 0);
         const totalAngle = d.x1 - d.x0;
         const newAngle = d.x0 + (preDivsSum/d.data.num)*totalAngle + (start ? 0 : (d.div.num/d.data.num)*totalAngle)
@@ -117,19 +117,19 @@ function ArcChart(props) {
             .data(root.descendants().filter(d => d.depth))
             .join('g') // enter subtree
             .style('display', function(d) {
-                if (d.data.name === 'other') {
+                if (d.data.id === -1) {
                     return 'none';
                 } else {
                     return 'block';
                 }
             })
             .style('opacity', d => (1 - (d.depth - 1)*Math.min(maxOpacityGradient, (1 - minOpacity)/treeHeight)))
-            .attr('id', d => `${d.data.name}`)
+            .attr('id', d => `${d.data.id}`)
             .selectAll('g')
             .data(d => d.data.divs.map(division => ({ ...d, 'div': division })))
             .join('path') // enter div within subtree
             .attr('d', arc)
-            .attr('fill', (d, i) => colorMap[d.div.name]);
+            .attr('fill', (d, i) => colorMap[d.div.id]);
 
         // draw arc-masks
         svg
@@ -143,25 +143,25 @@ function ArcChart(props) {
             .join('path')
             .attr('d', mouseArc)
             .attr('class', 'masks')
-            .attr('id', d => `${d.data.name}-mask`)
+            .attr('id', d => `mask_${d.data.id}`)
             .attr('stroke', backgroundColor)
             .attr('stroke-width', arcPadding)
-            .attr('cursor', d => d.data.name === 'other' ? 'auto' : 'pointer')
+            .attr('cursor', d => d.data.id === -1 ? 'auto' : 'pointer')
             .on('mouseenter', (event, d) => {
-                if (d.data.name === 'other') {
+                if (d.data.id === -1) {
                     handleHover(null);
                 } else if (selectedRef.current === null) {
-                    handleHover(d.data.name);
+                    handleHover(d.data.id);
                 }
             })
             .on('mouseleave', () => handleHover(null))
             // notice here that only individual subtree(arc) can be selected, but not individual div
             .on('click', (event, d) => {
                 event.stopPropagation();
-                if (d.data.name === 'other') {
+                if (d.data.id === -1) {
                     handleSelect(null);
                 } else {
-                    handleSelect(d.data.name);
+                    handleSelect(d.data.id);
                 }
             });
 
