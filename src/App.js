@@ -22,7 +22,7 @@ function App() {
   };
 
   const [hoveredArc, setHoveredArc] = React.useState(null);
-  const handleArcHovre = (name) => {
+  const handleArcHover = (name) => {
     hoveredRef.current = name;
     setHoveredArc(name);
   };
@@ -35,7 +35,7 @@ function App() {
       <ArcChart
         data={data}
         handleSelect={handleArcSelect}
-        handleHover={handleArcHovre}
+        handleHover={handleArcHover}
         selectedRef={selectedRef}
         hoveredRef={hoveredRef}
         colorMap={colorMap}
