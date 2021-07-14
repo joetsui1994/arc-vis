@@ -1,6 +1,6 @@
 {
     "id": "flare",
-    "num": 41869,
+    "num": 0,
     "height": 3,
     "children": [{
             "id": "physics",
@@ -229,8 +229,5 @@
             ]
         }
     ],
-    "divs": [
-        { "id": "apple", "num": 20000 },
-        { "id": "orange", "num": 21869 }
-    ]
+    "divs": []
 }
