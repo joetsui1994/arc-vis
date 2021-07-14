@@ -1,0 +1,145 @@
+{
+    "id": 1435,
+    "name": "GROOT",
+    "num": 0,
+    "height": 5,
+    "divs": [],
+    "children": [
+        {
+            "id": 1427,
+            "name": "GLOBAL",
+            "num": 2732,
+            "children": [
+                {
+                    "id": 1428,
+                    "name": "group_A",
+                    "num": 2726,
+                    "children": [
+                        {
+                            "id": 1429,
+                            "name": "group_B",
+                            "num": 2323,
+                            "children": [
+                                {
+                                    "id": 1430,
+                                    "name": "group_C",
+                                    "num": 2119,
+                                    "children": [
+                                        {
+                                            "id": 1432,
+                                            "name": "group_D",
+                                            "num": 57,
+                                            "children": [],
+                                            "divs": [
+                                                {
+                                                    "id": 1432,
+                                                    "num": 57
+                                                }
+                                            ],
+                                            "value": 57
+                                        },
+                                        {
+                                            "id": 1431,
+                                            "name": "group_E",
+                                            "num": 194,
+                                            "children": [],
+                                            "divs": [
+                                                {
+                                                    "id": 1431,
+                                                    "num": 194
+                                                }
+                                            ],
+                                            "value": 194
+                                        },
+                                        {
+                                            "id": 1433,
+                                            "name": "group_F",
+                                            "num": 317,
+                                            "children": [],
+                                            "divs": [
+                                                {
+                                                    "id": 1433,
+                                                    "num": 317
+                                                }
+                                            ],
+                                            "value": 317
+                                        },
+                                        {
+                                            "id": 1434,
+                                            "name": "group_G",
+                                            "num": 1184,
+                                            "children": [],
+                                            "divs": [
+                                                {
+                                                    "id": 1434,
+                                                    "num": 1184
+                                                }
+                                            ],
+                                            "value": 1184
+                                        },
+                                        {
+                                            "id": -1,
+                                            "num": 367,
+                                            "value": 367,
+                                            "children": [],
+                                            "divs": [],
+                                            "adivs": []
+                                        }
+                                    ],
+                                    "divs": [
+                                        {
+                                            "id": 1430,
+                                            "num": 2119
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": -1,
+                                    "num": 204,
+                                    "value": 204,
+                                    "children": [],
+                                    "divs": [],
+                                    "adivs": []
+                                }
+                            ],
+                            "divs": [
+                                {
+                                    "id": 1429,
+                                    "num": 2323
+                                }
+                            ]
+                        },
+                        {
+                            "id": -1,
+                            "num": 403,
+                            "value": 403,
+                            "children": [],
+                            "divs": [],
+                            "adivs": []
+                        }
+                    ],
+                    "divs": [
+                        {
+                            "id": 1428,
+                            "num": 2726
+                        }
+                    ]
+                },
+                {
+                    "id": -1,
+                    "num": 6,
+                    "value": 6,
+                    "children": [],
+                    "divs": [],
+                    "adivs": []
+                }
+            ],
+            "divs": [
+                {
+                    "id": 1427,
+                    "num": 2732
+                }
+            ]
+        }
+    ]
+}
