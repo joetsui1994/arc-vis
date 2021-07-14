@@ -1,0 +1,33 @@
+[{
+        "label": "apple",
+        "value": 12
+    },
+    {
+        "label": "orange",
+        "value": 16
+    },
+    {
+        "label": "pear",
+        "value": 11
+    },
+    {
+        "label": "grape",
+        "value": 8
+    },
+    {
+        "label": "peach",
+        "value": 12
+    },
+    {
+        "label": "pinapple",
+        "value": 23
+    },
+    {
+        "label": "strawberry",
+        "value": 19
+    },
+    {
+        "label": "cherry",
+        "value": 20
+    }
+]
