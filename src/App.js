@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import data from './data/testData.json';
+import data from './data/testData2.json';
 import ArcChart from './arcChart';
 
 import pickColor from './colourPicker';
