@@ -1,4 +1,4 @@
-import Rainbow from '@indot/rainbowvis';
+import Rainbow from 'rainbowvis.js';
 
 const decToHex = (dec) => {
     const decSafe = Math.max((Math.min(dec, 1)), 0);
