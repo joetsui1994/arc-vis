@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import * as d3 from 'd3';
 
-const treeHeight = 3; // excluding root node
-
 function ArcChart(props) {
     const { data, selectedRef, hoveredRef, colorMap, width, backgroundColor, params } = props;
     const { handleSelect, handleHover } = props;
@@ -19,6 +17,9 @@ function ArcChart(props) {
         transitionDuation
     } = params;
 
+    // extract treeHeight
+    const treeHeight = data.height;
+
     // select masks to reduce opacity according to selected/hovered arc
     const highlightPath = (id) => {
         if (id === null) {
@@ -27,7 +28,7 @@ function ArcChart(props) {
                     d3.select(`#mask_${d.data.id}`).transition(d.data.id).duration(transitionDuation).attr('fill-opacity', 0);
                 });
         } else {
-            const highlightedNode = d3.select(`#${id}`).datum();
+            const highlightedNode = d3.select(`#arc_${id}`).datum();
             const sequence = highlightedNode
                 .ancestors()
                 .reverse()
@@ -91,7 +92,7 @@ function ArcChart(props) {
             d3
                 .hierarchy(data)
                 .sum(d => d.value)
-                .sort((a, b) => b.value - a.value)
+                .sort((a, b) => b.id - a.id)
         );
 
         // function to draw arcs, each arc is a div
@@ -114,7 +115,8 @@ function ArcChart(props) {
         svg
             .append('g')
             .selectAll('path')
-            .data(root.descendants().filter(d => d.depth))
+            // .data(root.descendants().filter(d => d.depth))
+            .data(root.descendants())
             .join('g') // enter subtree
             .style('display', function(d) {
                 if (d.data.id === -1) {
@@ -124,7 +126,7 @@ function ArcChart(props) {
                 }
             })
             .style('opacity', d => (1 - (d.depth - 1)*Math.min(maxOpacityGradient, (1 - minOpacity)/treeHeight)))
-            .attr('id', d => `${d.data.id}`)
+            .attr('id', d => `arc_${d.data.id}`)
             .selectAll('g')
             .data(d => d.data.divs.map(division => ({ ...d, 'div': division })))
             .join('path') // enter div within subtree
@@ -139,7 +141,8 @@ function ArcChart(props) {
             .attr('pointer-events', 'all')
             .on('mouseout', () => handleHover(null))
             .selectAll('g')
-            .data(root.descendants().filter(d => d.depth))
+            // .data(root.descendants().filter(d => d.depth))
+            .data(root.descendants())
             .join('path')
             .attr('d', mouseArc)
             .attr('class', 'masks')
