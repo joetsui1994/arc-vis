@@ -6,6 +6,8 @@ import data1 from "./data/test.json";
 import pickColor from "./colourPicker";
 import chartParams from "./chartParams";
 import PieChart from "./pieChart";
+import AreaChart from "./areaChart";
+import data2 from "./data/data.json";
 
 // colours are hard-coded here (AVOID)
 const divNames = ["apple", "orange", "pear"];
@@ -19,28 +21,34 @@ for (var i = 0; i < data1.length; i++) {
   var hex = pickColor(data1.length, i, 1, null);
   colorScale.push(hex);
 }
+var colorScale2 = [];
+for (var i = 0; i < Object.keys(data2[0]).length - 1; i++) {
+  var hex = pickColor(Object.keys(data2[0]).length - 1, i, 1, null);
+  colorScale2.push(hex);
+}
+console.log(colorScale2);
 
 function App() {
-  const [selectedArc, setSelectedArc] = React.useState(null);
-  const handleArcSelect = (name) => {
-    selectedRef.current = name;
-    setSelectedArc(name);
-  };
+  // const [selectedArc, setSelectedArc] = React.useState(null);
+  // const handleArcSelect = (name) => {
+  //   selectedRef.current = name;
+  //   setSelectedArc(name);
+  // };
 
-  const [hoveredArc, setHoveredArc] = React.useState(null);
-  const handleArcHovre = (name) => {
-    hoveredRef.current = name;
-    setHoveredArc(name);
-  };
+  // const [hoveredArc, setHoveredArc] = React.useState(null);
+  // const handleArcHovre = (name) => {
+  //   hoveredRef.current = name;
+  //   setHoveredArc(name);
+  // };
 
-  const selectedRef = React.useRef(null);
-  const hoveredRef = React.useRef(null);
+  // const selectedRef = React.useRef(null);
+  // const hoveredRef = React.useRef(null);
 
-  console.log(colorScale);
+  // console.log(colorScale);
 
   return (
     <div>
-      <ArcChart
+      {/* <ArcChart
         data={data}
         handleSelect={handleArcSelect}
         handleHover={handleArcHovre}
@@ -55,15 +63,15 @@ function App() {
         SELECTED: {selectedArc ?? "please select an arc"}
         <br />
         HOVERED: {hoveredArc ?? "please hover over an arc"}
-      </div>
-      <PieChart
+      </div> */}
+      {/* <PieChart
         data={data1}
         width={400}
         height={400}
         innerRadius={60}
         outerRadius={100}
         colorScale={colorScale}
-      />
+      /> */}
       <div>
         <div
           className="legend-container"
@@ -74,8 +82,10 @@ function App() {
         ></div>
         <div className="pie-container"></div>
       </div>
+      <div className="area-chart">
+        <AreaChart data={data2} width={800} colorScale={colorScale2} />
+      </div>
     </div>
   );
 }
-
 export default App;
