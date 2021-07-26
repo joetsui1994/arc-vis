@@ -7,12 +7,26 @@ const AreaChart = (props) => {
   const margin = { top: 10, right: 20, bottom: 20, left: 40 };
   const width = props.width;
   const height = 500;
+<<<<<<< Updated upstream
+=======
+  var isClicked = false;
+>>>>>>> Stashed changes
 
   React.useEffect(() => {
     drawChart();
   }, []);
 
   const drawChart = () => {
+<<<<<<< Updated upstream
+=======
+    function unClick() {
+      d3.selectAll(".area").style("fill-opacity", 1);
+    }
+
+    function hoverClick() {
+      d3.selectAll(".area").style("fill-opacity", 0.6);
+    }
+>>>>>>> Stashed changes
     const xAxis = (g) =>
       g.attr("transform", `translate(0,${height - margin.bottom})`).call(
         d3
@@ -37,7 +51,12 @@ const AreaChart = (props) => {
         return x(new Date(Date.parse(d.data.date)));
       })
       .y0((d) => y(d[0]))
+<<<<<<< Updated upstream
       .y1((d) => y(d[1]));
+=======
+      .y1((d) => y(d[1]))
+      .curve(d3.curveBasis);
+>>>>>>> Stashed changes
     const series = d3
       .stack()
       .keys(Object.keys(data[0]).slice(1))
@@ -57,12 +76,45 @@ const AreaChart = (props) => {
       .selectAll("path")
       .data(series)
       .join("path")
+<<<<<<< Updated upstream
       .attr("fill", ({ key }) => {
         return color(key);
       })
       .attr("d", area)
       .append("title")
       .text(({ key }) => key);
+=======
+      .attr("class", "area")
+      .attr("fill", ({ key }) => {
+        return color(key);
+      })
+      .on("mouseout", function () {
+        if (!isClicked) {
+          unClick();
+        }
+      })
+      .on("mouseover", function () {
+        if (!isClicked) {
+          hoverClick();
+          d3.select(this).style("fill-opacity", "1");
+        }
+      })
+      .on("click", function (event, d) {
+        isClicked = true;
+        hoverClick();
+        d3.select(this).style("fill-opacity", "1");
+        event.stopPropagation();
+        console.log(d);
+      })
+      .attr("d", area)
+      .append("title")
+      .text(({ key }) => key);
+    // .attr("id", (d) => Object.keys(data[0]).slice(d, d + 1))
+    d3.select("body").on("click", function () {
+      isClicked = false;
+      unClick();
+    });
+>>>>>>> Stashed changes
 
     svg.append("g").call(xAxis);
 
