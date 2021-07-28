@@ -73,14 +73,14 @@ function App() {
         colorScale={colorScale}
       /> */}
       <div>
-        <div
+        {/* <div
           className="legend-container"
           style={{
             height: "300px",
             margin: "100px",
           }}
         ></div>
-        <div className="pie-container"></div>
+        <div className="pie-container"></div> */}
       </div>
       <div className="area-chart">
         <AreaChart data={data2} width={800} colorScale={colorScale2} />

@@ -16,11 +16,7 @@
         "Mining and Extraction": 19
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-02-01T00:00:00.000Z",
-=======
         "date": "2000-01-02T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 1023,
         "Manufacturing": 694,
         "Leisure and hospitality": 779,
@@ -37,11 +33,7 @@
         "Mining and Extraction": 25
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-03-01T00:00:00.000Z",
-=======
         "date": "2000-01-03T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 983,
         "Manufacturing": 739,
         "Leisure and hospitality": 789,
@@ -58,11 +50,7 @@
         "Mining and Extraction": 17
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-04-01T00:00:00.000Z",
-=======
         "date": "2000-01-04T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 793,
         "Manufacturing": 736,
         "Leisure and hospitality": 658,
@@ -79,11 +67,7 @@
         "Mining and Extraction": 20
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-05-01T00:00:00.000Z",
-=======
         "date": "2000-01-05T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 821,
         "Manufacturing": 685,
         "Leisure and hospitality": 675,
@@ -100,32 +84,24 @@
         "Mining and Extraction": 27
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-06-01T00:00:00.000Z",
-=======
         "date": "2000-01-06T00:00:00.000Z",
->>>>>>> Stashed changes
-        "Wholesale and Retail Trade": 837,
-        "Manufacturing": 621,
-        "Leisure and hospitality": 833,
-        "Business services": 545,
-        "Construction": 389,
-        "Education and Health": 452,
-        "Government": 603,
-        "Finance": 216,
-        "Self-employed": 188,
-        "Other": 225,
-        "Transportation and Utilities": 183,
-        "Information": 102,
-        "Agriculture": 109,
-        "Mining and Extraction": 13
+        "Wholesale and Retail Trade": 0,
+        "Manufacturing": 0,
+        "Leisure and hospitality": 0,
+        "Business services": 0,
+        "Construction": 0,
+        "Education and Health": 0,
+        "Government": 0,
+        "Finance": 0,
+        "Self-employed": 0,
+        "Other": 0,
+        "Transportation and Utilities": 0,
+        "Information": 0,
+        "Agriculture": 0,
+        "Mining and Extraction": 0
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-07-01T00:00:00.000Z",
-=======
         "date": "2000-01-07T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 792,
         "Manufacturing": 708,
         "Leisure and hospitality": 786,
@@ -142,32 +118,24 @@
         "Mining and Extraction": 16
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-08-01T00:00:00.000Z",
-=======
         "date": "2000-01-08T00:00:00.000Z",
->>>>>>> Stashed changes
-        "Wholesale and Retail Trade": 853,
-        "Manufacturing": 685,
-        "Leisure and hospitality": 675,
-        "Business services": 584,
-        "Construction": 446,
-        "Education and Health": 450,
-        "Government": 583,
-        "Finance": 213,
-        "Self-employed": 186,
-        "Other": 187,
-        "Transportation and Utilities": 198,
-        "Information": 143,
-        "Agriculture": 110,
-        "Mining and Extraction": 23
+        "Wholesale and Retail Trade": 0,
+        "Manufacturing": 0,
+        "Leisure and hospitality": 0,
+        "Business services": 0,
+        "Construction": 0,
+        "Education and Health": 0,
+        "Government": 0,
+        "Finance": 0,
+        "Self-employed": 0,
+        "Other": 0,
+        "Transportation and Utilities": 0,
+        "Information": 0,
+        "Agriculture": 0,
+        "Mining and Extraction": 0
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-09-01T00:00:00.000Z",
-=======
         "date": "2000-01-09T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 791,
         "Manufacturing": 667,
         "Leisure and hospitality": 636,
@@ -184,11 +152,7 @@
         "Mining and Extraction": 25
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-10-01T00:00:00.000Z",
-=======
         "date": "2000-01-10T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 739,
         "Manufacturing": 693,
         "Leisure and hospitality": 691,
@@ -205,53 +169,41 @@
         "Mining and Extraction": 39
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-11-01T00:00:00.000Z",
-=======
         "date": "2000-01-11T00:00:00.000Z",
->>>>>>> Stashed changes
-        "Wholesale and Retail Trade": 701,
-        "Manufacturing": 672,
-        "Leisure and hospitality": 694,
-        "Business services": 547,
-        "Construction": 482,
-        "Education and Health": 351,
-        "Government": 384,
-        "Finance": 184,
-        "Self-employed": 273,
-        "Other": 217,
-        "Transportation and Utilities": 129,
-        "Information": 117,
-        "Agriculture": 192,
-        "Mining and Extraction": 11
+        "Wholesale and Retail Trade": 0,
+        "Manufacturing": 0,
+        "Leisure and hospitality": 0,
+        "Business services": 0,
+        "Construction": 0,
+        "Education and Health": 0,
+        "Government": 0,
+        "Finance": 0,
+        "Self-employed": 0,
+        "Other": 0,
+        "Transportation and Utilities": 0,
+        "Information": 0,
+        "Agriculture": 0,
+        "Mining and Extraction": 0
     },
     {
-<<<<<<< Updated upstream
-        "date": "2000-12-01T00:00:00.000Z",
-=======
         "date": "2000-01-12T00:00:00.000Z",
->>>>>>> Stashed changes
-        "Wholesale and Retail Trade": 715,
-        "Manufacturing": 653,
-        "Leisure and hospitality": 639,
-        "Business services": 564,
-        "Construction": 580,
-        "Education and Health": 293,
-        "Government": 365,
-        "Finance": 200,
-        "Self-employed": 178,
-        "Other": 167,
-        "Transportation and Utilities": 168,
-        "Information": 151,
-        "Agriculture": 196,
-        "Mining and Extraction": 20
+        "Wholesale and Retail Trade": 0,
+        "Manufacturing": 0,
+        "Leisure and hospitality": 0,
+        "Business services": 0,
+        "Construction": 0,
+        "Education and Health": 0,
+        "Government": 0,
+        "Finance": 0,
+        "Self-employed": 0,
+        "Other": 0,
+        "Transportation and Utilities": 0,
+        "Information": 0,
+        "Agriculture": 0,
+        "Mining and Extraction": 0
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-01-01T00:00:00.000Z",
-=======
         "date": "2000-01-13T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 908,
         "Manufacturing": 911,
         "Leisure and hospitality": 806,
@@ -268,11 +220,7 @@
         "Mining and Extraction": 11
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-02-01T00:00:00.000Z",
-=======
         "date": "2000-01-14T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 990,
         "Manufacturing": 902,
         "Leisure and hospitality": 821,
@@ -289,11 +237,7 @@
         "Mining and Extraction": 27
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-03-01T00:00:00.000Z",
-=======
         "date": "2000-01-15T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 1037,
         "Manufacturing": 954,
         "Leisure and hospitality": 817,
@@ -310,11 +254,7 @@
         "Mining and Extraction": 14
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-04-01T00:00:00.000Z",
-=======
         "date": "2000-01-16T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 820,
         "Manufacturing": 855,
         "Leisure and hospitality": 744,
@@ -331,11 +271,7 @@
         "Mining and Extraction": 24
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-05-01T00:00:00.000Z",
-=======
         "date": "2000-01-17T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 875,
         "Manufacturing": 903,
         "Leisure and hospitality": 731,
@@ -352,11 +288,7 @@
         "Mining and Extraction": 34
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-06-01T00:00:00.000Z",
-=======
         "date": "2000-01-18T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 955,
         "Manufacturing": 956,
         "Leisure and hospitality": 821,
@@ -373,11 +305,7 @@
         "Mining and Extraction": 26
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-07-01T00:00:00.000Z",
-=======
         "date": "2000-01-19T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 833,
         "Manufacturing": 1054,
         "Leisure and hospitality": 813,
@@ -394,11 +322,7 @@
         "Mining and Extraction": 17
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-08-01T00:00:00.000Z",
-=======
         "date": "2000-01-20T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 928,
         "Manufacturing": 1023,
         "Leisure and hospitality": 767,
@@ -415,11 +339,7 @@
         "Mining and Extraction": 18
     },
     {
-<<<<<<< Updated upstream
-        "date": "2001-09-01T00:00:00.000Z",
-=======
         "date": "2000-01-21T00:00:00.000Z",
->>>>>>> Stashed changes
         "Wholesale and Retail Trade": 936,
         "Manufacturing": 996,
         "Leisure and hospitality": 900,
