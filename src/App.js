@@ -6,7 +6,7 @@ import data1 from "./data/test.json";
 import pickColor from "./colourPicker";
 import chartParams from "./chartParams";
 import PieChart from "./pieChart";
-import AreaChart from "./areaChart";
+import Area from "./area";
 import data2 from "./data/data.json";
 
 // colours are hard-coded here (AVOID)
@@ -26,9 +26,16 @@ for (var i = 0; i < Object.keys(data2[0]).length - 1; i++) {
   var hex = pickColor(Object.keys(data2[0]).length - 1, i, 1, null);
   colorScale2.push(hex);
 }
-console.log(colorScale2);
+
 
 function App() {
+  const selectedRef = React.useRef(null);
+  const [selectedItemId, setSelectedItemId] = React.useState(null);
+  const [itemInfo, setItemInfo] = React.useState('');
+  const handleItemOnSelect = (id) => {
+        setSelectedItemId(id);
+        selectedRef.current = id;
+    };
   // const [selectedArc, setSelectedArc] = React.useState(null);
   // const handleArcSelect = (name) => {
   //   selectedRef.current = name;
@@ -72,19 +79,32 @@ function App() {
         outerRadius={100}
         colorScale={colorScale}
       /> */}
-      <div>
-        {/* <div
+      {/* <div>
+        <div
           className="legend-container"
           style={{
             height: "300px",
             margin: "100px",
           }}
         ></div>
-        <div className="pie-container"></div> */}
-      </div>
+        <div className="pie-container"></div>
+      </div> */}
       <div className="area-chart">
-        <AreaChart data={data2} width={800} colorScale={colorScale2} />
+        <Area data={data2} width={800} 
+              colorScale={colorScale2} 
+              name="stack" height={500} 
+              handleItemOnSelect={handleItemOnSelect}
+              setItemInfo={setItemInfo}
+              selectedRef={selectedRef}
+              selectedItemId={selectedItemId}/>
       </div>
+      <div
+          className="legend-container"
+          style={{
+            height: "300px",
+            margin: "100px",
+          }}
+        ><p>{itemInfo}</p></div>
     </div>
   );
 }
