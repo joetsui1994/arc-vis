@@ -44,7 +44,7 @@ function App() {
         width={600}
       />
       <div>
-	hello<br />
+	hello this is a test<br />
         SELECTED: {selectedArc ?? 'please select an arc'}<br />
         HOVERED: {hoveredArc ?? 'please hover over an arc'}
       </div>
