@@ -1,6 +1,6 @@
 # Arc-Vis
 
-is this working yet??? is this working? why is this not working
+can i get this to work?
 
 A visualisation tool for visualising hierarchical data with the following unique features:
 * wrapped in a React functional component
