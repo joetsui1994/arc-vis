@@ -1,6 +1,6 @@
 # Arc-Vis
 
-this is a abc-testing, why is this not working
+why is this not working
 
 A visualisation tool for visualising hierarchical data with the following unique features:
 * wrapped in a React functional component
