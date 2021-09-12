@@ -44,7 +44,6 @@ function App() {
         width={600}
       />
       <div>
-	this is a test of github deployment<br />
         SELECTED: {selectedArc ?? 'please select an arc'}<br />
         HOVERED: {hoveredArc ?? 'please hover over an arc'}
       </div>
