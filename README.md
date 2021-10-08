@@ -1,7 +1,5 @@
 # Arc-Vis
 
-can i get this to work?
-
 A visualisation tool for visualising hierarchical data with the following unique features:
 * wrapped in a React functional component
 * customizable settings to optimise visualisation
